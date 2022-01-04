@@ -49,4 +49,44 @@ header.removeAttribute("id"); // remove o atributo id do header
 
 const element = document.querySelector("body");
 
-element.style.backgroundColor = "#f9f3D2";
+element.style.backgroundColor = "#f9f3D2"; //muda o background de bory
+
+//Navegando pelos elementos: parentElement e parentNode
+
+const body = document.querySelector("body");
+
+console.log(body.parentNode); //retorna a tag HTML, que é o nó pai de body
+
+//Navagando pelos elementos filhos
+
+const el = document.querySelector("body");
+console.log(el.childNodes); // retorna os nós filhos de bory
+
+//Buscando irmãos
+const el = document.querySelector("header");
+
+//nextSibling e nextElementSibling
+el.nextSibling; // retorna o proximo irmão considerando o espaço vazio
+el.nextElementSibling; // retorna o proximo irmão não considerando o espaço vazio
+el.previousSibling; // leva em consideração o espaço vazio
+el.previousElementSibling; //não leva em comsideração espaço vazio
+
+//criando e adicionando elementos na página
+
+// createElement
+
+const div = document.createElement("div");
+div.innerText = "Olá Devs"; //adiciona um texto interno, mas n é visto na página
+
+//append prepend
+const bory = document.querySelector("body");
+
+body.append(div); //adiciona algo depois - prepend adiciona antes
+
+//EVENTOS - Eventos são dispadados quando há alguma ação, como exemplo, pressionar uma tecla,
+//passar o mouse por cima de algum elemento,etc
+//<h1 onclick="print()"> texto </h1>
+
+function print() {
+  console.log("Print"); //Quando o clicar no h1 o texto será mostrado no console
+}
