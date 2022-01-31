@@ -1,0 +1,63 @@
+:root {
+    --bg-card: #dbe0f179;
+    --marrom: #7C7474;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    padding: 5rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--marrom);
+    color: var(--marrom);
+    border-radius: 2%;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+    margin: 25px;
+}
+
+.Card>.divFoto {
+    padding: 1rem;
+}
+
+.divFoto>.fotoCard {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.fontProfissao {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.fontNome {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.Card>.divLink {
+    margin-top: 45px;
+}
+
+.divLink>.linkCard {
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 14px;
+    background-color: var(--marrom);
+    border-radius: 2%;
+    color: #FFFFFF;
+}
