@@ -56,9 +56,15 @@ VARIÁVEIS:
     var clima = "Quente"
     clima = "Frio" - pode reatribuir outros valores
 
+    -> var é global e também local. Não é tão utilizada
+
 ## Let
+    Variável local. Pode ser reatribuido valores, assim como var. 
+    Entre var e let, preferencialmente escolher let
 
     let clima = "Quente"
+    clima = "Frio"
+
 
 ## Const 
 
@@ -66,6 +72,14 @@ VARIÁVEIS:
 
     const clima = "Quente"
     clima = "Frio" - isso daria erro na hora de executar, pois variável contante não muda.
+
+## CONCATENAÇÃO E INTERPOLAÇÃO
+
+const age = 20
+
+-> console.log('Débora tem' + age + 'anos.') = concatenação
+
+-> console.log(`Débora tem ${age} anos.`) = interpolação
 
 
 FUNCTION:
@@ -88,6 +102,16 @@ const sum = function(number1, number2){
 }
 
 console.log(som(2, 3)) // vai retornar 5
+
+
+## arrow function
+
+const sayMyName = () => {
+    console.log('Teste')
+}
+
+
+
 
 
 
