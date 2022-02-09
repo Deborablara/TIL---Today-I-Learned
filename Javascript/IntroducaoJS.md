@@ -110,6 +110,15 @@ const sayMyName = () => {
     console.log('Teste')
 }
 
+## função construtora
+
+function Person(name){
+    this.name = name
+}
+
+const debora = new Person("Débora");;
+console.log(debora) -> retornará "Débora"
+
 
 
 
