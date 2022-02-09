@@ -27,7 +27,7 @@ main{
 
 main form{
     width: 100%;
-    height: 25vh;
+    height:28vh;
     padding: 1rem;
     background-color: var(--branco);
     border-radius: 13px;
@@ -57,7 +57,6 @@ main form input{
 main section{
     width: 100%;
     height: 25vh;
-    margin-top: -10%;
     background: var(--branco);
     border-radius: 10px;
 
@@ -90,7 +89,40 @@ main footer{
     color: var(--branco);
 }
 
-@media (max-width: 730px){
+@media (max-width: 1000px){
+    main{
+        width:60%;
+        height: 90vh;
+    }
+
+    main form {
+        height: 40%;
+    }
+
+    main form label{
+        font-size: 15px;
+    }
+
+    main form input{
+        width: 80%;
+    }
+
+    main section{
+        height: 40%;
+    }
+    main section  h2{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    main section button, main form button{
+        width: 50%;
+    }
+
+    
+}
+
+@media (max-width: 520px){
     main{
         width: 100%;
         height: 100vh;
@@ -103,7 +135,7 @@ main footer{
     }
 
     main form label{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     main form input{
@@ -112,11 +144,10 @@ main footer{
 
     main section{
         height: 25vh;
-        margin-top: -35%;
     }
 
     main section  h2{
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
     }
 
