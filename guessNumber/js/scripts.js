@@ -29,9 +29,9 @@ function heandleSubmit(e){
     if(!kick){
         alert('Digite algum valor!');
         return;
+    } else{
+        updateAttempt(attempt, ++Guess.attemptsNumber);
     }
-
-    updateAttempt(attempt, ++Guess.attemptsNumber);
 
     if(numberDrawn == kick){
         playAgain();
