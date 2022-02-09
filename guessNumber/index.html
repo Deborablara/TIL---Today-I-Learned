@@ -15,24 +15,20 @@
 
 <body>
 
-    <header>
-        <a href="#"></a>
-    </header>
-
     <main class="container">
 
         <form id="form">
-            <label for="kock">Digite um número de (0 - 10)</label>
+            <label for="kock">Enter a number from (0 - 10)</label>
             <input type="number" id="kick" max="10" placeholder="0">
 
-            <button type="submit">Jogar</button>
+            <button type="submit">Play</button>
         </form>
         
         <section class="result-box" id="result">
-            <h2 id="status">Adivinhe o número sorteado</h2>
-            <span id="attempt">Tentativas: 0</span>
+            <h2 id="status">Guess the number drawn</h2>
+            <span id="attempt">Attempts: 0</span>
 
-            <button id="btn-restart" onclick="restart()">Jogar de novo</button>
+            <button id="btn-restart" onclick="restart()">Restart</button>
         </section>
 
         <footer>
