@@ -116,9 +116,8 @@ function Person(name){
     this.name = name
 }
 
-const debora = new Person("Débora");;
+const debora = new Person("Débora");
 console.log(debora) -> retornará "Débora"
-
 
 
 
