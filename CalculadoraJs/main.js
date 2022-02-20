@@ -1,4 +1,4 @@
-function criaCalculadora() {
+/*function criaCalculadora() {
   return {
     display: document.querySelector('.display'),
 
@@ -69,24 +69,20 @@ function criaCalculadora() {
 }
 
 const calculadora = criaCalculadora()
-calculadora.inicia()
+calculadora.inicia()*/
 
-/*
-
-
-                                            PRATICANDO FUNÇÃO CONSTRUTORA
-
+//  PRATICANDO FUNÇÃO CONSTRUTORA
 
 function Calculadora() {
   this.display = document.querySelector('.display')
 
-  this.inicia = function () {
+  this.inicia = () => {
     alert('Oi, iniciei!')
     this.botao()
     this.enter()
   }
 
-  this.enter = function () {
+  this.enter = () => {
     this.display.addEventListener('keyup', e => {
       if (e.keyCode === 13) {
         this.conta()
@@ -94,7 +90,7 @@ function Calculadora() {
     })
   }
 
-  this.conta = function () {
+  this.conta = () => {
     let conta = this.display.value
 
     try {
@@ -112,7 +108,7 @@ function Calculadora() {
     }
   }
 
-  this.botao = function () {
+  this.botao = () => {
     document.addEventListener('click', e => {
       const el = e.target
 
@@ -132,19 +128,18 @@ function Calculadora() {
     })
   }
 
-  this.apagarUm = function () {
+  this.apagarUm = () => {
     this.display.value = this.display.value.slice(0, -1)
   }
 
-  this.clear = function () {
+  this.clear = () => {
     this.display.value = ''
   }
 
-  this.valorDisplay = function (valor) {
+  this.valorDisplay = valor => {
     this.display.value += valor
   }
 }
 
 const calculadora1 = new Calculadora()
 calculadora1.inicia()
-*/
