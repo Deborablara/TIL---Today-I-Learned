@@ -70,3 +70,81 @@ function criaCalculadora() {
 
 const calculadora = criaCalculadora()
 calculadora.inicia()
+
+/*
+
+
+                                            PRATICANDO FUNÇÃO CONSTRUTORA
+
+
+function Calculadora() {
+  this.display = document.querySelector('.display')
+
+  this.inicia = function () {
+    alert('Oi, iniciei!')
+    this.botao()
+    this.enter()
+  }
+
+  this.enter = function () {
+    this.display.addEventListener('keyup', e => {
+      if (e.keyCode === 13) {
+        this.conta()
+      }
+    })
+  }
+
+  this.conta = function () {
+    let conta = this.display.value
+
+    try {
+      conta = eval(conta)
+
+      if (!conta) {
+        alert('Conta inválida')
+        return
+      }
+
+      this.display.value = String(conta)
+    } catch (e) {
+      alert('Conta inválida')
+      return
+    }
+  }
+
+  this.botao = function () {
+    document.addEventListener('click', e => {
+      const el = e.target
+
+      if (el.classList.contains('btn-num')) {
+        this.valorDisplay(el.innerText)
+      }
+      if (el.classList.contains('btn-clear')) {
+        this.clear()
+      }
+      if (el.classList.contains('btn-del')) {
+        this.apagarUm()
+      }
+
+      if (el.classList.contains('btn-eq')) {
+        this.conta()
+      }
+    })
+  }
+
+  this.apagarUm = function () {
+    this.display.value = this.display.value.slice(0, -1)
+  }
+
+  this.clear = function () {
+    this.display.value = ''
+  }
+
+  this.valorDisplay = function (valor) {
+    this.display.value += valor
+  }
+}
+
+const calculadora1 = new Calculadora()
+calculadora1.inicia()
+*/
