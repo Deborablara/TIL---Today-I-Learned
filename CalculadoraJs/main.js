@@ -1,4 +1,4 @@
-/*function criaCalculadora() {
+function criaCalculadora() {
   return {
     display: document.querySelector('.display'),
 
@@ -69,9 +69,9 @@
 }
 
 const calculadora = criaCalculadora()
-calculadora.inicia()*/
+calculadora.inicia()
 
-//  PRATICANDO FUNÇÃO CONSTRUTORA
+/*  PRATICANDO FUNÇÃO CONSTRUTORA
 
 function Calculadora() {
   this.display = document.querySelector('.display')
@@ -142,4 +142,4 @@ function Calculadora() {
 }
 
 const calculadora1 = new Calculadora()
-calculadora1.inicia()
+calculadora1.inicia()*/
