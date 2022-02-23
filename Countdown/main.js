@@ -1,7 +1,4 @@
-const day = document.getElementById('days')
-const hour = document.getElementById('hours')
-const minute = document.getElementById('minutes')
-const second = document.getElementById('seconds')
+const count = document.getElementById('count')
 
 function countdown(date) {
   let days, hours, minutes, seconds
@@ -16,10 +13,7 @@ function countdown(date) {
     seconds = Math.floor(total) % 60
     console.log(`${days} : ${hours} : ${minutes} : ${seconds}`)
 
-    day.innerHTML = `${days}`
-    hour.innerHTML = `${hours}`
-    minute.innerHTML = `${minutes}`
-    second.innerHTML = `${seconds}`
+    count.innerText = `${days}  :  ${hours}  :  ${minutes}  :  ${seconds}`
 
     total = total - 1
   }, 1000)
