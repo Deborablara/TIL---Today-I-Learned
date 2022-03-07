@@ -1,3 +1,0 @@
-npm install nodemon --save-dev
-
---save-dev = dependecias de desenvolvimento, não é uma dependecia para o projeto, apenas para o meu computador na hora de desenvolver
